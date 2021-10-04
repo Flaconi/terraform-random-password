@@ -1,54 +1,65 @@
 variable "keepers" {
-  default = {}
-  type    = map
+  description = "Arbitrary map of values that, when changed, will trigger recreation of resource."
+  default     = {}
+  type        = map(string)
 }
 
 variable "length" {
-  default = 16
-  type    = number
+  description = "The length of the string desired."
+  default     = 16
+  type        = number
 }
 
 variable "lower" {
-  default = true
-  type    = bool
+  description = "Include lowercase alphabet characters in the result."
+  default     = true
+  type        = bool
 }
 
 variable "min_lower" {
-  default = 2
-  type    = number
+  description = "Minimum number of lowercase alphabet characters in the result."
+  default     = 2
+  type        = number
 }
 
 variable "min_numeric" {
-  default = 2
-  type    = number
+  description = "Minimum number of numeric characters in the result."
+  default     = 2
+  type        = number
 }
 
 variable "min_special" {
-  default = 2
-  type    = number
+  description = "Minimum number of special characters in the result."
+  default     = 2
+  type        = number
 }
 
 variable "min_upper" {
-  default = 2
-  type    = number
+  description = "Minimum number of uppercase alphabet characters in the result."
+  default     = 2
+  type        = number
 }
 
 variable "number" {
-  default = true
-  type    = bool
+  description = "Include numeric characters in the result."
+  default     = true
+  type        = bool
 }
 
 variable "override_special" {
-  default = "!@#$%&*()-_=+[]{}<>:?"
-  type    = string
+  description = "Supply your own list of special characters to use for string generation."
+  default     = "!@#$%&*()-_=+[]{}<>:?"
+  type        = string
 }
 
 variable "special" {
-  default = true
-  type    = bool
+  description = "Include special characters in the result."
+  default     = true
+  type        = bool
 }
 
 variable "upper" {
-  default = true
-  type    = bool
+  description = "Include uppercase alphabet characters in the result."
+  default     = true
+  type        = bool
 }

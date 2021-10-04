@@ -8,5 +8,5 @@ module "random_password_with_keeper" {
 }
 
 output "random_password_with_keeper" {
-  value = module.random_password_with_keeper.this_password
+  value = module.random_password_with_keeper.password
 }
