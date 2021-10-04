@@ -6,7 +6,7 @@
 
 Using Terragrunt Dependencies, this module is simple to use as input for the password of an RDS Database
 
-This Terraform module creates random_passwords with predifined minimal strength of" 
+This Terraform module creates random_passwords with predefined minimal strength of:
  * 16 chars length
  * Minimum 2 upper
  * Minimum 2 lower
