@@ -40,7 +40,7 @@ variable "min_upper" {
   type        = number
 }
 
-variable "number" {
+variable "numeric" {
   description = "Include numeric characters in the result."
   default     = true
   type        = bool
