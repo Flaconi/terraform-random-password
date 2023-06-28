@@ -52,14 +52,14 @@ output "random_password_with_keeper" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.26 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.5 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_random"></a> [random](#provider\_random) | ~> 3.1 |
+| <a name="provider_random"></a> [random](#provider\_random) | ~> 3.5 |
 
 ## Modules
 
@@ -82,7 +82,7 @@ No modules.
 | <a name="input_min_numeric"></a> [min\_numeric](#input\_min\_numeric) | Minimum number of numeric characters in the result. | `number` | `2` | no |
 | <a name="input_min_special"></a> [min\_special](#input\_min\_special) | Minimum number of special characters in the result. | `number` | `2` | no |
 | <a name="input_min_upper"></a> [min\_upper](#input\_min\_upper) | Minimum number of uppercase alphabet characters in the result. | `number` | `2` | no |
-| <a name="input_number"></a> [number](#input\_number) | Include numeric characters in the result. | `bool` | `true` | no |
+| <a name="input_numeric"></a> [numeric](#input\_numeric) | Include numeric characters in the result. | `bool` | `true` | no |
 | <a name="input_override_special"></a> [override\_special](#input\_override\_special) | Supply your own list of special characters to use for string generation. | `string` | `"!@#$%&*()-_=+[]{}<>:?"` | no |
 | <a name="input_special"></a> [special](#input\_special) | Include special characters in the result. | `bool` | `true` | no |
 | <a name="input_upper"></a> [upper](#input\_upper) | Include uppercase alphabet characters in the result. | `bool` | `true` | no |
